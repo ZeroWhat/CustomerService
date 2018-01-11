@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/repair_list_item_background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/shap_rounded_rectangle"
+        android:layout_margin="15dip"
+        android:gravity="center">
+        <Button
+            android:id="@+id/repair_bt_copy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="信息提取"/>
+    <TextView
+        android:id="@+id/repair_list_item_tv_context"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dip"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:background="@drawable/shap_dotted_line">
+            <TextView
+                android:id="@+id/repair_list_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="安装师傅："
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:id="@+id/repair_list_tv1_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="王大锤"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/repair_list_tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="拨打电话"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:background="@drawable/shap_dotted_line">
+            <TextView
+                android:id="@+id/repair_list_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="安装师傅："
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:id="@+id/repair_list_tv2_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="王大锤"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/repair_list_item_bt"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/repair_list_item_nbt"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#35bbb0"
+            android:gravity="center"
+            android:text="@string/repairList"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/repair_list_layout_back"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:background="@mipmap/fh" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/back"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/repair_list_bt1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/nhander"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:background="@color/white"/>
+
+        <Button
+            android:id="@+id/repair_list_bt2"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/yfinish"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:background="@color/white"/>
+
+
+        <Button
+            android:id="@+id/repair_list_bt3"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/nfinish"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:background="@color/white"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <View
+            android:id="@+id/repair_list_view1"
+            android:layout_width="0dip"
+            android:layout_height="3dip"
+            android:layout_weight="1"
+            android:background="@color/wheat"/>
+        <View
+            android:id="@+id/repair_list_view2"
+            android:layout_width="0dip"
+            android:layout_height="3dip"
+            android:layout_weight="1"
+            android:background="@color/wheat"/>
+        <View
+            android:id="@+id/repair_list_view3"
+            android:layout_width="0dip"
+            android:layout_height="3dip"
+            android:layout_weight="1"
+            android:background="@color/wheat"/>
+    </LinearLayout>
+
+    <com.whycools.customerservice.viewpager.NoScrollViewPager
+        android:id="@+id/repair_list_vp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>
